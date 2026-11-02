@@ -1,0 +1,1516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#D0D0D0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp">
+
+        <!-- Search Bar with slight margin so it doesn't touch edges -->
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Arama"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:drawableEnd="@android:drawable/ic_menu_search"
+            android:padding="10dp"
+            android:background="@color/white"
+            android:layout_marginHorizontal="6dp"
+            android:layout_marginBottom="6dp" />
+
+        <!-- ================= 1. Türkiye Süper Lig ================= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/header_bg"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🇹🇷 Türkiye Süper Lig"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:paddingStart="4dp" />
+        </LinearLayout>
+
+        <!-- Match 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/row_orange"
+            android:layout_marginTop="3dp">
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="#2E7D32" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingVertical="6dp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp">
+                <!-- Match Header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="start|center_vertical">
+                        <CheckBox
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:padding="0dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🇹🇷 TÜR S"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:paddingStart="4dp" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="İY: 0-0"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:textColor="#555555" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="end|center_vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MS 19:00"
+                            android:textSize="11sp"
+                            android:paddingEnd="4dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3241516"
+                            android:textSize="11sp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/turquaz_bg"
+                            android:paddingHorizontal="3dp"
+                            android:paddingVertical="1dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- Match Info -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingTop="6dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Beşiktaş"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:gravity="end"
+                        android:paddingEnd="10dp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2-0"
+                        android:textStyle="bold"
+                        android:textColor="#1976D2"
+                        android:textSize="14sp"
+                        android:gravity="center" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Başakşehir"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:gravity="start"
+                        android:paddingStart="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="#EF6C00" />
+        </LinearLayout>
+
+        <!-- Match 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/row_orange"
+            android:layout_marginTop="3dp">
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="#2E7D32" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingVertical="6dp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp">
+                <!-- Match Header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="start|center_vertical">
+                        <CheckBox
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:padding="0dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🇹🇷 TÜR S"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:paddingStart="4dp" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="İY: 0-0"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:textColor="#555555" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="end|center_vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MS 19:00"
+                            android:textSize="11sp"
+                            android:paddingEnd="4dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3241582"
+                            android:textSize="11sp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/turquaz_bg"
+                            android:paddingHorizontal="3dp"
+                            android:paddingVertical="1dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- Match Info -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingTop="6dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Rizespor"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:gravity="end"
+                        android:paddingEnd="10dp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="3-4"
+                        android:textStyle="bold"
+                        android:textColor="#1976D2"
+                        android:textSize="14sp"
+                        android:gravity="center" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Trabzon"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:gravity="start"
+                        android:paddingStart="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="#EF6C00" />
+        </LinearLayout>
+
+        <!-- Match 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/row_orange"
+            android:layout_marginTop="3dp">
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="#2E7D32" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingVertical="6dp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp">
+                <!-- Match Header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="start|center_vertical">
+                        <CheckBox
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:padding="0dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🇹🇷 TÜR S"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:paddingStart="4dp" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="İY: 2-0"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:textColor="#555555" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="end|center_vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MS 21:30"
+                            android:textSize="11sp"
+                            android:paddingEnd="4dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3241596"
+                            android:textSize="11sp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/turquaz_bg"
+                            android:paddingHorizontal="3dp"
+                            android:paddingVertical="1dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- Match Info -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingTop="6dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="G.Saray"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:gravity="end"
+                        android:paddingEnd="10dp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2-1"
+                        android:textStyle="bold"
+                        android:textColor="#1976D2"
+                        android:textSize="14sp"
+                        android:gravity="center" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="F.Bahçe"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:gravity="start"
+                        android:paddingStart="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="#EF6C00" />
+        </LinearLayout>
+
+
+        <!-- ================= 2. Türkiye TFF 1. Lig ================= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/header_bg"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="6dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🇹🇷 Türkiye TFF 1. Lig"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:paddingStart="4dp" />
+        </LinearLayout>
+
+        <!-- Match 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/row_orange"
+            android:layout_marginTop="3dp">
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="#2E7D32" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingVertical="6dp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp">
+                <!-- Match Header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="start|center_vertical">
+                        <CheckBox
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:padding="0dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🇹🇷 TÜR 1"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:paddingStart="4dp" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="İY: 2-1"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:textColor="#555555" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="end|center_vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MS 20:00"
+                            android:textSize="11sp"
+                            android:paddingEnd="4dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3237343"
+                            android:textSize="11sp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/turquaz_bg"
+                            android:paddingHorizontal="3dp"
+                            android:paddingVertical="1dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- Match Info -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingTop="6dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Mardin"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:gravity="end"
+                        android:paddingEnd="10dp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2-1"
+                        android:textStyle="bold"
+                        android:textColor="#1976D2"
+                        android:textSize="14sp"
+                        android:gravity="center" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Manisa FK"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:gravity="start"
+                        android:paddingStart="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="#EF6C00" />
+        </LinearLayout>
+
+
+        <!-- ================= 3. İspanya LaLiga ================= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/header_bg"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="6dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🇪🇸 İspanya LaLiga"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:paddingStart="4dp" />
+        </LinearLayout>
+
+        <!-- Match 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/row_orange"
+            android:layout_marginTop="3dp">
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="#2E7D32" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingVertical="6dp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp">
+                <!-- Match Header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="start|center_vertical">
+                        <CheckBox
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:padding="0dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🇪🇸 İSP"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:paddingStart="4dp" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="İY: 1-0"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:textColor="#555555" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="end|center_vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MS 23:00"
+                            android:textSize="11sp"
+                            android:paddingEnd="4dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3238701"
+                            android:textSize="11sp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/turquaz_bg"
+                            android:paddingHorizontal="3dp"
+                            android:paddingVertical="1dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- Match Info -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingTop="6dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sevilla"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:gravity="end"
+                        android:paddingEnd="10dp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2-0"
+                        android:textStyle="bold"
+                        android:textColor="#1976D2"
+                        android:textSize="14sp"
+                        android:gravity="center" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Osasuna"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:gravity="start"
+                        android:paddingStart="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="#EF6C00" />
+        </LinearLayout>
+
+
+        <!-- ================= 4. Fransa 1.Lig ================= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/header_bg"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="6dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🇫🇷 Fransa 1.Lig"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:paddingStart="4dp" />
+        </LinearLayout>
+
+        <!-- Match 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/row_orange"
+            android:layout_marginTop="3dp">
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="#2E7D32" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingVertical="6dp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp">
+                <!-- Match Header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="start|center_vertical">
+                        <CheckBox
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:padding="0dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🇫🇷 FRA 1"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:paddingStart="4dp" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="İY: 0-0"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:textColor="#555555" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="end|center_vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MS 22:30"
+                            android:textSize="11sp"
+                            android:paddingEnd="4dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3238586"
+                            android:textSize="11sp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/turquaz_bg"
+                            android:paddingHorizontal="3dp"
+                            android:paddingVertical="1dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- Match Info -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingTop="6dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Paris SG"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:gravity="end"
+                        android:paddingEnd="10dp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2-0"
+                        android:textStyle="bold"
+                        android:textColor="#1976D2"
+                        android:textSize="14sp"
+                        android:gravity="center" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Lyon"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:gravity="start"
+                        android:paddingStart="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="#EF6C00" />
+        </LinearLayout>
+
+
+        <!-- ================= 5. Portekiz Premier Lig ================= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/header_bg"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="6dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🇵🇹 Portekiz Premier Lig"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:paddingStart="4dp" />
+        </LinearLayout>
+
+        <!-- Match 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/row_orange"
+            android:layout_marginTop="3dp">
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="#2E7D32" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingVertical="6dp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp">
+                <!-- Match Header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="start|center_vertical">
+                        <CheckBox
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:padding="0dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🇵🇹 POR P"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:paddingStart="4dp" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="İY: 1-0"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:textColor="#555555" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="end|center_vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MS 21:45"
+                            android:textSize="11sp"
+                            android:paddingEnd="4dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3234895"
+                            android:textSize="11sp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/turquaz_bg"
+                            android:paddingHorizontal="3dp"
+                            android:paddingVertical="1dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- Match Info -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingTop="6dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Santa Clara"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:gravity="end"
+                        android:paddingEnd="10dp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1-2"
+                        android:textStyle="bold"
+                        android:textColor="#1976D2"
+                        android:textSize="14sp"
+                        android:gravity="center" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Benfica"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:gravity="start"
+                        android:paddingStart="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="#EF6C00" />
+        </LinearLayout>
+
+
+        <!-- ================= 6. Danimarka Süperlig ================= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/header_bg"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="6dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🇩🇰 Danimarka Süperlig"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:paddingStart="4dp" />
+        </LinearLayout>
+
+        <!-- Match 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/row_orange"
+            android:layout_marginTop="3dp">
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="#2E7D32" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingVertical="6dp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp">
+                <!-- Match Header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="start|center_vertical">
+                        <CheckBox
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:padding="0dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🇩🇰 DANS"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:paddingStart="4dp" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="İY: 0-1"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:textColor="#555555" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="end|center_vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MS 21:00"
+                            android:textSize="11sp"
+                            android:paddingEnd="4dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3241581"
+                            android:textSize="11sp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/turquaz_bg"
+                            android:paddingHorizontal="3dp"
+                            android:paddingVertical="1dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- Match Info -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingTop="6dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Copenhag"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:gravity="end"
+                        android:paddingEnd="10dp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1-1"
+                        android:textStyle="bold"
+                        android:textColor="#1976D2"
+                        android:textSize="14sp"
+                        android:gravity="center" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Odense"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:gravity="start"
+                        android:paddingStart="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="#EF6C00" />
+        </LinearLayout>
+
+
+        <!-- ================= 7. Portekiz 2.Lig ================= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/header_bg"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="6dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🇵🇹 Portekiz 2.Lig"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:paddingStart="4dp" />
+        </LinearLayout>
+
+        <!-- Match 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/row_orange"
+            android:layout_marginTop="3dp">
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="#2E7D32" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingVertical="6dp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp">
+                <!-- Match Header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="start|center_vertical">
+                        <CheckBox
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:padding="0dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🇵🇹 POR 2"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:paddingStart="4dp" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="İY: 1-0"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:textColor="#555555" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="end|center_vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MS 23:45"
+                            android:textSize="11sp"
+                            android:paddingEnd="4dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3235186"
+                            android:textSize="11sp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/turquaz_bg"
+                            android:paddingHorizontal="3dp"
+                            android:paddingVertical="1dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- Match Info -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingTop="6dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Torreense"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:gravity="end"
+                        android:paddingEnd="10dp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1-0"
+                        android:textStyle="bold"
+                        android:textColor="#1976D2"
+                        android:textSize="14sp"
+                        android:gravity="center" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Amarante"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:gravity="start"
+                        android:paddingStart="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="#EF6C00" />
+        </LinearLayout>
+
+
+        <!-- ================= 8. Romanya 1.Lig ================= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/header_bg"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="6dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🇷🇴 Romanya 1.Lig"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:paddingStart="4dp" />
+        </LinearLayout>
+
+        <!-- Match 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/row_orange"
+            android:layout_marginTop="3dp">
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="#2E7D32" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingVertical="6dp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp">
+                <!-- Match Header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="start|center_vertical">
+                        <CheckBox
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:padding="0dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🇷🇴 ROM 1"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:paddingStart="4dp" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="İY: 0-2"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:textColor="#555555" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="end|center_vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MS 21:00"
+                            android:textSize="11sp"
+                            android:paddingEnd="4dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3234720"
+                            android:textSize="11sp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/turquaz_bg"
+                            android:paddingHorizontal="3dp"
+                            android:paddingVertical="1dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- Match Info -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingTop="6dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sepsi"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:gravity="end"
+                        android:paddingEnd="10dp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0-5"
+                        android:textStyle="bold"
+                        android:textColor="#1976D2"
+                        android:textSize="14sp"
+                        android:gravity="center" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Craiova"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:gravity="start"
+                        android:paddingStart="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="#EF6C00" />
+        </LinearLayout>
+
+
+        <!-- ================= 9. İspanya LaLiga 2 ================= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/header_bg"
+            android:gravity="center_vertical"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="6dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🇪🇸 İspanya LaLiga 2"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:paddingStart="4dp" />
+        </LinearLayout>
+
+        <!-- Match 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/row_orange"
+            android:layout_marginTop="3dp">
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="#2E7D32" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingVertical="6dp"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp">
+                <!-- Match Header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="start|center_vertical">
+                        <CheckBox
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:padding="0dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🇪🇸 İSP 2"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:paddingStart="4dp" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="İY: 2-3"
+                        android:textSize="11sp"
+                        android:gravity="center"
+                        android:textColor="#555555" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:gravity="end|center_vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MS 22:30"
+                            android:textSize="11sp"
+                            android:paddingEnd="4dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3238748"
+                            android:textSize="11sp"
+                            android:textColor="@color/black"
+                            android:background="@drawable/turquaz_bg"
+                            android:paddingHorizontal="3dp"
+                            android:paddingVertical="1dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- Match Info -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingTop="6dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="FC Andorra"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:gravity="end"
+                        android:paddingEnd="10dp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2-3"
+                        android:textStyle="bold"
+                        android:textColor="#1976D2"
+                        android:textSize="14sp"
+                        android:gravity="center" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Burgos"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:gravity="start"
+                        android:paddingStart="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:background="#EF6C00" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
